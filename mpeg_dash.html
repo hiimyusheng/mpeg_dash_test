@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Contenet-Type" content="text/html; charset=utf-8">
+		<title>MPEG-DASH串流實作</title>
+		
+
+		<link rel="stylesheet" href="css/dash.css">
+			<script src="javascript/js/jquery-1.11.1.min.js"></script>
+			<script src="javascript/js/localDash.js"></script>
+			<script src="javascript/js/LocalDeviceInterface.js"></script>
+
+
+		<script src="javascript/dash-js/adaptationlogic.js"></script>
+		<script src="javascript/dash-js/bandwidth.js"></script>
+		<script src="javascript/dash-js/basebuffer.js"></script>
+		<script src="javascript/dash-js/dash.js"></script>
+		<script src="javascript/dash-js/dashPlayerVars.js"></script>
+		<script src="javascript/dash-js/DASHttp.js"></script>
+		<script src="javascript/dash-js/eventHandlers.js"></script>
+		<script src="javascript/dash-js/fplot.js"></script>
+		<script src="javascript/dash-js/mediaSourceAPIAdaptation.js"></script>
+		<script src="javascript/dash-js/mediaSourceBuffer.js"></script>
+		<script src="javascript/dash-js/mpdParser.js"></script>
+		<script src="javascript/dash-js/rate_measurement.js"></script>
+		<script src="javascript/dash-js/timeBuffer.js"></script>
+
+	</head>
+	<body>
+	<H1>MPEG-DASH串流實作</H1>
+	<div class="videoWrapper">
+		<video controls autoplay width="320" height="240"></video>
+		<canvas id="graph" width="600" height="500"></canvas>
+	</div>
+		<script>
+	
+
+		video = document.querySelector('video');
+		var dashPlayer = new DASHPlayer(video,"bigbuckbunny_mp.mpd")
+
+		</script>
+
+	</body>
+</html>
